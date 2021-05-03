@@ -31,10 +31,13 @@
         var addr = ''; // 주소 변수
         var extraAddr = ''; // 참고항목 변수
         
-          alert(addressEnglish);
+         if (data.userSelectedType === 'R') { // 사용자가 도로명 주소를 선택했을 경우
+                    alert(addressEnglish);
+                } else { // 사용자가 지번 주소를 선택했을 경우(J)
+                    alert(addressEnglish);
+                }
 
-       
-
+          
         // 우편번호와 주소 정보를 해당 필드에 넣는다.
         document.getElementById('sample3_postcode').value = data.zonecode;
         document.getElementById("sample3_address").value = addr;
